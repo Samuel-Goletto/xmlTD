@@ -1,0 +1,19 @@
+<!ELEMENT Polytech (students,profs,classes)>
+        <!ELEMENT profs (prof+)>
+        <!ELEMENT prof (name,age,department)>
+        <!ELEMENT classes (class+)>
+        <!ELEMENT class (name,profId)>
+        <!ELEMENT profId (#PCDATA)>
+        <!ELEMENT department (#PCDATA)>
+<!ELEMENT students (student+)>
+<!ATTLIST class classId ID #REQUIRED>
+<!ATTLIST student studentID ID #REQUIRED>
+<!ATTLIST prof profID ID #REQUIRED >
+<!ELEMENT student (name,years,department,studentClasses)>
+<!ELEMENT studentClasses (studentClass+)>
+<!ELEMENT studentClass (id+)>
+<!ELEMENT id (#PCDATA)>
+        <!ELEMENT years (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+

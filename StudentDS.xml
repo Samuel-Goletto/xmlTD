@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Polytech SYSTEM "student.dtd">
+<Polytech>
+    <students>
+
+        <student studentID="A101">
+            <name>Zero</name>
+            <years>4</years>
+            <department>SI</department>
+            <studentClasses>
+                <studentClass>
+                    <id>SI4-001</id>
+                </studentClass>
+            </studentClasses>
+        </student>
+        <student studentID="A102">
+            <name>One</name>
+            <years>4</years>
+            <department>SI</department>
+            <studentClasses>
+                <studentClass>
+                    <id>SI4-002</id>
+                </studentClass>
+            </studentClasses>
+        </student>
+    </students>
+    <profs>
+        <prof profID="Papazian-1">
+            <name>Papazian</name>
+            <age>40</age>
+            <department>SI</department>
+        </prof>
+
+    </profs>
+    <classes>
+        <class classId="SI4-001">
+            <name>C++</name>
+            <profId>qwe-1</profId>
+        </class>
+        <class classId="SI4-002">
+            <name>Language</name>
+            <profId>Papazian-1</profId>
+        </class>
+    </classes>
+</Polytech>

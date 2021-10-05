@@ -1,0 +1,36 @@
+filmographique
+{
+    background-color: #ffffff;
+    width: 100%;
+}
+film
+{
+    display: block;
+    margin-bottom: 40pt;
+    margin-left: 40px;
+    font-size: large;
+}
+body{
+    background: url("https://www.google.com/logos/2014/simplevideo/v64/main-sprite.png") no-repeat top right;
+
+
+}
+title
+{
+    display: block;
+    color: #b48989;
+    font-size: 20pt;
+    margin-left: 60pt;
+}
+idk
+{
+    color: #0000FF;
+    font-size: 20pt;
+}
+
+actor,director,year
+{
+    display: block;
+    color: #000000;
+    margin-left: 60pt;
+}

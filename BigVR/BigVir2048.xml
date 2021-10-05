@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dodo:stylesheet version="1.0"
+                xmlns:dodo="whatever">
+
+<BigVir>
+    <citizen id="10">
+        <name>
+
+        </name>
+        <age>
+
+        </age>
+        <weight>
+
+        </weight>
+        <MedicalHistory>
+            <consultations>
+                <consultation>
+
+                </consultation>
+            </consultations>
+            <TestResults>
+                <result>
+
+                </result>
+            </TestResults>
+        </MedicalHistory>
+        <Relations>
+            <person>
+                <id>
+                </id>
+                <proximity>
+
+                </proximity>
+            </person>
+        </Relations>
+        <SocialHistory>
+
+            <events>
+                <site>
+                    <siteId>
+
+                    </siteId>
+                    <date>
+
+                    </date>
+                    <description>
+
+                    </description>
+                </site>
+            </events>
+
+        </SocialHistory>
+    </citizen>
+
+    <sites>
+        <site>
+
+        </site>
+
+    </sites>
+</BigVir>

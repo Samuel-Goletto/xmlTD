@@ -1,0 +1,9 @@
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT actor (#PCDATA)>
+<!ELEMENT actors (actor+)>
+<!ELEMENT director (#PCDATA)>
+
+<!ELEMENT xswl:directors (director+)>
+<!ELEMENT film (title,year,actors,xswl:directors) >
+<!ELEMENT xswl:filmographique (film+)

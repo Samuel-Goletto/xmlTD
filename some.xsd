@@ -1,0 +1,18 @@
+<xs:schema  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="what">
+    <xs:simpleType >
+        <xs:annotation>
+
+        </xs:annotation>
+        <xs:restriction base="xs:simpleType">
+
+            <xs:minExclusive value="213"/>
+            <xs:maxExclusive value="21"/>
+
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+<xs:element name="ad">
+
+</xs:element>
+</xs:schema>

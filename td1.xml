@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO8859-1"?>
+
+<?xml-stylesheet type="text/css" href="td1format.css"?>
+<!DOCTYPE filmographique SYSTEM "films.dtd">
+<xswl:filmographique xmlns:xswl="something.com">
+	<film>
+		Title:<title>Fargo</title>
+		Year:<year>1996</year>
+		Actors:<actors>
+			<actor>Frances McDormand
+			</actor>
+			<actor>William H. Macy</actor>
+			<actor>
+				Steve Buscemi</actor>
+		</actors>
+		Directors:<xswl:directors>
+		<director>Joel Coen
+			</director>
+		<director>Ethan Coen</director>
+	</xswl:directors>
+	</film>
+	<film>
+
+		Title:<title>	Apocalypse now</title>
+		Year:<year>1979 </year>
+		Actors:<actors>
+		<actor>
+			Marlon Brando
+		</actor>
+		<actor>Robert Duvall</actor>
+		<actor>Martin Sheen</actor>
+	</actors>
+		Directors:<xswl:directors>
+		<director>Francis Ford Coppola</director></xswl:directors>
+	</film>
+</xswl:filmographique>

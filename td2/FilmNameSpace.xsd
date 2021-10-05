@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          targetNamespace="td2"
+           xmlns:my="td2"
+           xmlns:qq="td2"
+           elementFormDefault="qualified">
+    <xs:element name="FILMS">
+        <xs:complexType>
+
+            <xs:choice minOccurs="1" maxOccurs="unbounded">
+                <xs:element ref="my:FILM"/>
+                <xs:element ref="my:ARTISTE"/>
+
+            </xs:choice>
+        </xs:complexType>
+        <xs:keyref name="idRole" refer="my:idArt">
+            <xs:selector xpath="my:FILM/my:ROLES/my:ROLE"/>
+            <xs:field xpath="@idRole"/>
+        </xs:keyref>
+
+        <xs:key name="idArt">
+            <xs:selector xpath="my:ARTISTE"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+    </xs:element>
+    <xs:element name="FILM">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="my:TITRE"/>
+                <xs:element ref="my:GENRE"/>
+                <xs:element ref="my:PAYS"/>
+                <xs:element ref="my:MES"/>
+                <xs:element ref="my:ROLES"/>
+                <xs:element ref="my:RESUME"/>
+            </xs:sequence>
+            <xs:attribute name="Annee" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="TITRE" type="xs:string"/>
+    <xs:element name="GENRE" type="xs:string"/>
+    <xs:element name="PAYS" type="xs:string"/>
+    <xs:element name="MES">
+
+        <xs:complexType>
+            <xs:attribute name="id" use="required"/>
+        </xs:complexType>
+
+    </xs:element>
+    <xs:element name="ROLES">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="my:ROLE"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ROLE">
+        <xs:complexType>
+            <xs:attribute name="idRole" use="required"/>
+        </xs:complexType>
+
+    </xs:element>
+
+    <xs:element name="PRENOM" type="xs:string"/>
+    <xs:element name="NOM" type="xs:string"/>
+    <xs:element name="INTITULE" type="xs:string"/>
+    <xs:element name="RESUME" type="xs:string"/>
+    <xs:element name="ARTISTE">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="my:ACTNOM"/>
+                <xs:element ref="my:ACTPNOM"/>
+                <xs:element ref="my:ANNEENAISS"/>
+            </xs:sequence>
+            <xs:attribute name="id" use="required"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="ACTNOM" type="xs:string"/>
+    <xs:element name="ACTPNOM" type="xs:string"/>
+    <xs:element name="ANNEENAISS" type="xs:string"/>
+
+</xs:schema>

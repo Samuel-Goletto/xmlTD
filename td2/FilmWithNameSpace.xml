@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<FILMS
+        xmlns:my="td2"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="FilmNameSpace.xsd">
+    <my:FILM Annee="">
+        <my:TITRE></my:TITRE>
+        <my:GENRE></my:GENRE>
+        <my:PAYS></my:PAYS>
+        <my:MES id=""/>
+        <my:ROLES>
+            <my:ROLE idRole="123"/>
+        </my:ROLES>
+        <my:RESUME></my:RESUME>
+    </my:FILM>
+  <my:ARTISTE id="33">
+      <my:ACTNOM></my:ACTNOM>
+      <my:ACTPNOM></my:ACTPNOM>
+      <my:ANNEENAISS></my:ANNEENAISS>
+  </my:ARTISTE>
+
+    <my:ARTISTE id="123">
+        <my:ACTNOM></my:ACTNOM>
+        <my:ACTPNOM></my:ACTPNOM>
+        <my:ANNEENAISS></my:ANNEENAISS>
+    </my:ARTISTE>
+</FILMS>

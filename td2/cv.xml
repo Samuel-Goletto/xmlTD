@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO8859-1"?>
+
+
+<!DOCTYPE cv SYSTEM "cv.dtd">
+<cv>
+    <titre>this</titre>
+    <cvnom>this</cvnom>
+    <etatcivil>
+        <nom>this</nom>
+        <prenom>this</prenom>
+        <naissance>2000</naissance>
+        <situation>this</situation>
+    </etatcivil>
+    <formations>
+        <formation date-iso="" date="" intitule=""/>
+    </formations>
+    <connaissances></connaissances>
+    <professionnel>
+        <experience date-iso="" date="" entreprise="" fonction="">
+            <missions>
+                <mission></mission>
+            </missions>
+            <environnement>
+                <technique type="1" nom=""/>
+            </environnement>
+        </experience>
+    </professionnel>
+</cv>
