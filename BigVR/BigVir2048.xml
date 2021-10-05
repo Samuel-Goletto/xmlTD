@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<BigVir  >
+<BigVir >
     <citizen id="10">
         <name>
             Bob
@@ -48,34 +48,21 @@
                         yes
                     </positive>
                     <date>
-
+                        2021/02/01
                     </date>
                 </result>
             </TestResults>
         </MedicalHistory>
         <Relations>
-            <person>
-                <id>
-                </id>
+            <person id="10">
                 <proximity>
-
+                    10
                 </proximity>
             </person>
         </Relations>
         <SocialHistory>
-
             <events>
-                <event>
-                    <eventsite site="2">
-                        <date>
-
-                        </date>
-                        <description>
-
-                        </description>
-                    </eventsite>
-                </event>
-
+                <event id="23"></event>
             </events>
 
         </SocialHistory>
@@ -107,18 +94,29 @@
             <date>19/05/2021</date>
             <eventDescription>Exposition de peinture</eventDescription>
             <participants>
-                <participant citizenId="54"></participant>
-                <participant citizenId="93"></participant>
+                <participant citizenId="54">
+
+                </participant>
+                <participant citizenId="93">
+
+                </participant>
             </participants>
         </event>
         <event siteId="2">
             <date>21/05/2021</date>
             <eventDescription>Concert</eventDescription>
             <participants>
-                <participant citizenId="28"></participant>
-                <participant citizenId="37"></participant>
-                <participant citizenId="48"></participant>
-                <participant citizenId="87"></participant>
+                <participant citizenId="28">
+                </participant>
+                <participant citizenId="37">
+
+                </participant>
+                <participant citizenId="48">
+
+                </participant>
+                <participant citizenId="87">
+
+                </participant>
             </participants>
         </event>
     </events>
