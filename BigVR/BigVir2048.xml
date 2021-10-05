@@ -1,27 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dodo:stylesheet version="1.0"
-                xmlns:dodo="whatever">
 
-<BigVir>
+
+<BigVir  >
     <citizen id="10">
         <name>
-
+            Bob
         </name>
         <age>
-
+            20
         </age>
         <weight>
-
+            160
         </weight>
         <MedicalHistory>
             <consultations>
                 <consultation>
-
+                    <date>
+                        2021.01.01
+                    </date>
+                    <motivation>
+                        sick
+                    </motivation>
+                    <description>
+                        very sick
+                    </description>
                 </consultation>
             </consultations>
+            <hospitalizations>
+                <hospitalization>
+                    <date>
+                        2021.01.01
+                    </date>
+                    <motivation>
+                        sick
+                    </motivation>
+                    <description>
+                        very sick
+                    </description>
+                    <term>
+                        10
+                    </term>
+                </hospitalization>
+            </hospitalizations>
             <TestResults>
                 <result>
+                    <positive>
+                        yes
+                    </positive>
+                    <date>
 
+                    </date>
                 </result>
             </TestResults>
         </MedicalHistory>
@@ -37,26 +65,61 @@
         <SocialHistory>
 
             <events>
-                <site>
-                    <siteId>
+                <event>
+                    <eventsite site="2">
+                        <date>
 
-                    </siteId>
-                    <date>
+                        </date>
+                        <description>
 
-                    </date>
-                    <description>
+                        </description>
+                    </eventsite>
+                </event>
 
-                    </description>
-                </site>
             </events>
 
         </SocialHistory>
     </citizen>
 
     <sites>
-        <site>
+        <site siteId="1">
+            <Popularity>
+                <wholeday date="2021/02/01">
+                    <numberperhour time="1" >
+                        223
+                    </numberperhour>
+                    <numberperhour time="2" >
+                        223
+                    </numberperhour>
+                </wholeday>
 
+            </Popularity>
+            <address>123 route X</address>
+            <description>Bibliothèque</description>
         </site>
-
+        <site siteId="2">
+            <address>555 route Y</address>
+            <siteDescription>Musée</siteDescription>
+        </site>
     </sites>
+    <events>
+        <event siteId="1">
+            <date>19/05/2021</date>
+            <eventDescription>Exposition de peinture</eventDescription>
+            <participants>
+                <participant citizenId="54"></participant>
+                <participant citizenId="93"></participant>
+            </participants>
+        </event>
+        <event siteId="2">
+            <date>21/05/2021</date>
+            <eventDescription>Concert</eventDescription>
+            <participants>
+                <participant citizenId="28"></participant>
+                <participant citizenId="37"></participant>
+                <participant citizenId="48"></participant>
+                <participant citizenId="87"></participant>
+            </participants>
+        </event>
+    </events>
 </BigVir>
