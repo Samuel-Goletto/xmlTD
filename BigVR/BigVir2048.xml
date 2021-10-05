@@ -3,71 +3,60 @@
 
 <BigVir >
     <citizen id="10">
-        <name>
-            Bob
-        </name>
-        <age>
-            20
-        </age>
-        <weight>
-            160
-        </weight>
+        <name>Bob</name>
+        <age>20</age>
+        <weight>160</weight>
         <MedicalHistory>
             <consultations>
                 <consultation>
-                    <date>
-                        2021.01.01
-                    </date>
-                    <motivation>
-                        sick
-                    </motivation>
-                    <description>
-                        very sick
-                    </description>
+                    <date>2021.01.01</date>
+                    <motivation>cough, fever</motivation>
+                    <description>angina, syrup prescription</description>
                 </consultation>
             </consultations>
             <hospitalizations>
                 <hospitalization>
-                    <date>
-                        2021.01.01
-                    </date>
-                    <motivation>
-                        sick
-                    </motivation>
-                    <description>
-                        very sick
-                    </description>
-                    <term>
-                        10
-                    </term>
+                    <admissionDate>2021.01.01</admissionDate>
+                    <dischargeDate>2021.01.03</dischargeDate>
+                    <reason>broken leg</reason>
+                    <description>left the hospital with a plaster on the left leg</description>
                 </hospitalization>
             </hospitalizations>
             <TestResults>
                 <result>
-                    <positive>
-                        yes
-                    </positive>
-                    <date>
-                        2021/02/01
-                    </date>
+                    <test>Tetanos</test>
+                    <date>2021.02.19</date>
+                    <positive>NO</positive>
+                </result>
+                <result>
+                    <test>BigVir</test>
+                    <date>2021.09.14</date>
+                    <positive>NO</positive>
                 </result>
             </TestResults>
         </MedicalHistory>
+        <BigVirStatus>
+            <vaccine>
+                <vaccinated>YES</vaccinated>
+                <date>2021.01.16</date>
+            </vaccine>
+            <infectionStatus>NOT INFECTED</infectionStatus>
+        </BigVirStatus>
         <Relations>
-            <person id="10">
-                <proximity>
-                    10
-                </proximity>
+            <person id="17">
+                <proximityLevel>3</proximityLevel>
+            </person>
+            <person id="19">
+                <proximityLevel>3</proximityLevel>
+            </person>
+            <person id="59">
+                <proximityLevel>2</proximityLevel>
+            </person>
+            <person id="37">
+                <proximityLevel>1</proximityLevel>
             </person>
         </Relations>
-        <SocialHistory>
-            <events>
-                <event id="23"></event>
-            </events>
-
-        </SocialHistory>
     </citizen>
-
     <sites>
         <site siteId="1">
             <Popularity>
